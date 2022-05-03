@@ -6,8 +6,8 @@ native CPython interpreter in browser. There are several projects that
 leverage this including
 [jupyterlite](https://jupyterlite.readthedocs.io/en/latest/). The idea
 of this project is to enable easily running code via an annotation in
-a remote ipykernel or locally. This is similar to marking a function
-via the decorator
+a remote ipykernel or locally in the web browser seamlessly. This is
+similar to marking a function via the decorator
 [dask.delayed](https://docs.dask.org/en/stable/delayed.html) and
 having the option to scale out a given computation.
 
@@ -22,7 +22,7 @@ python -m http.server &
 jupyter-server --ServerApp.allow_origin='*' --ServerApp.token='asdfqwerzxcvqwer'
 ```
 
-Load in your web browser `localhost:8000` and run the code in `src/code.py`
+Load in your web browser `localhost:8000` and run the following code.
 
 ```python
 import asyncio
