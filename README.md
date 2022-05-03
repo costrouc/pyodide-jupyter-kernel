@@ -1,4 +1,14 @@
-# run the following code
+# Usage
+
+```shell
+cd src
+python -m http.server &
+jupyter-server --ServerApp.allow_origin='*' --ServerApp.token='asdfqwerzxcvqwer'
+```
+
+Load in your web browser `localhost:8000` and run the code in `src/code.py`
+
+```python
 import asyncio
 import jupyter
 
@@ -25,3 +35,4 @@ def get_host():
 
 print(add(1, await mult(3, 4)))
 print(await get_host())
+```

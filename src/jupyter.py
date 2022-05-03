@@ -190,25 +190,3 @@ base64.b64encode(cloudpickle.dumps(result)).decode('utf-8')
 
 # jupyter-server --ServerApp.allow_origin='*' --ServerApp.token='asdfqwerzxcvqwer'
 jupyter_client = JupyterAPI('http://localhost:8888', api_token='asdfqwerzxcvqwer')
-
-
-# import asyncio
-# import jupyter
-# jupyter_client = jupyter.jupyter_client
-# kernel_id, kernel = await jupyter_client.ensure_kernel()
-# print(await kernel.send_code('costrouc', 'print(1)'))
-
-
-# def foo():
-#     import os
-#     return 42, os.getcwd()
-
-
-# @kernel.delayed
-# def foo_async():
-#     import os
-#     return 42, os.getcwd()
-
-
-# print(foo())
-# print(await foo_async())
