@@ -16,6 +16,10 @@
             pythonPackages.uvicorn
             pythonPackages.fastapi
             pythonPackages.pydantic
+            pythonPackages.cloudpickle
+
+            pythonPackages.jupyter_server
+            pythonPackages.ipykernel
           ];
         };
     };
